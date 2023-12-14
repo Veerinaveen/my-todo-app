@@ -1,38 +1,146 @@
-.App {
-  text-align: center;
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+}
+.App{
+  background-color: rgb(250, 251, 246);
+  height: 92vh;
+  
+  width: 100%;
+  max-width: 500px;
+  margin: 1.5rem auto;
+  box-shadow: 2px 2px 5px 2px;
+  position: relative;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ .App .header{
+  background-color: rgb(173, 236, 239);
+  color: rgb(3, 24, 24);
+  height: 50px;
+  width: 90%;
+  margin-top: 5px;
+  position: absolute;
+  top: 10px;
+  left: 7px;
+  padding: 7px;
+  text-transform: capitalize;
+  box-shadow: 2px 2px 4px 2px rgb(59, 93, 95);
+  font-size: 22px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App .content {
+  position: absolute;
+  top: 140px;
+  left: 25px;
+  width: 80%;
+  height: 65%;
+  background-color: transparent;
+  overflow: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App .content ul{
+  list-style-type: none;
+  width: 100%;
+  
   display: flex;
   flex-direction: column;
+ 
   align-items: center;
+} 
+
+.App .content ul li{
+  border: 1px solid rgb(84, 131, 137);
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem;
+  padding: 5px;
+  gap: 10px;
+}
+
+.App .content ul li input{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.App .content ul li label{
+  text-transform: capitalize;
+  width: 480px;
+  text-align: left;
+  font-size: 25px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.App .content ul li button{
+  background-color: cadetblue;
+  border: none;
+  height: 40px;
+  width: 55px;
+  padding: 5px;
+  margin-top: -6px;
+  margin-bottom: -5px;
+  margin-right: -5px;
+  cursor: pointer;
+}
+
+.App h1{
+  color: rgb(189, 17, 17);
+  position: absolute;
+  top: 7rem;
+  left: 2.5rem;
+  text-transform: capitalize;
+}
+
+.App .footer{
+  height: 50px;
+  width: 95%;
+  border: 1px solid black;
+  position: absolute;
+  bottom: 5px;
+  left: 12px;
+  color:  rgb(173, 236, 239);
+  background-color: rgb(10, 41, 41);
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  text-transform: capitalize;
 }
 
-.App-link {
-  color: #61dafb;
+.App form{
+  position: absolute;
+  height: 30px;
+  width: 83%;
+  top: 90px;
+  left: 25px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App form input{
+  flex: 1;
+  margin-top: -0.5px;
+  padding: 6px;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.App form button{
+  padding: 7px;
+  width: 50px;
+  margin-right: 0px;
+  border: none;
+  color:  rgb(173, 236, 239);
+  background-color: rgb(10, 41, 41);
+  cursor: pointer;
+  text-transform: capitalize;
 }
